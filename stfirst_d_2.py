@@ -79,6 +79,6 @@ win = st.sidebar.slider("Window size:",4,100,10)
 from io import StringIO
 
 if file1 and file2:
-    with StringIO(file1.getvalue().debode("utf-8")) as f1,\
+    with StringIO(file1.getvalue().decode("utf-8")) as f1,\
         StringIO(file2.getvalue().decode("utf-8")) as f2:
        dotmatrix(f1,f2,win)
